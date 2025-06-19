@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         btnReview.setOnClickListener {
             val intent = Intent(this, review::class.java)
             startActivity(intent)
-            finish()
+
         } //takes you to the review page
 
         btnAdd.setOnClickListener {
