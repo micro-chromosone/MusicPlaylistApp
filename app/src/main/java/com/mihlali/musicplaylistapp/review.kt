@@ -26,26 +26,40 @@ class review : AppCompatActivity() {
         val viewList = findViewById<TextView>(R.id.txtViewList)
         val viewCalc = findViewById<TextView>(R.id.txtViewCalc)
 
-        val input = ""
+        val songTiles = arrayListOf<String>()
+        val artists = arrayListOf<String>()
+        val ratings = arrayListOf<String>()
+        val comments = arrayListOf<String>()
 
-        val titles =
-            intent.getStringArrayListExtra("titles") //Retrieves the song titles from the intent
-        val artists =
-            intent.getStringArrayListExtra("artists") //Retrieves the artist names from the intent
-        val ratings =
-            intent.getStringArrayListExtra("ratings") //Retrieves the ratings from the intent
-        val comments =
-            intent.getStringArrayListExtra("comments") //Retrieves the comments from the intent
+        intent.putStringArrayListExtra("titles", songTiles)
+        intent.putStringArrayListExtra("artists", artists)
+        intent.putStringArrayListExtra("ratings", ratings)
+        intent.putStringArrayListExtra("comments", comments)
 
-
-
-        Display.setOnClickListener {
-            for (i in titles.indices) {
-                input.append("Title: ${titles[i]}")
-                input.append("Artist: ${artists[i]}")
-
-            }
+        val titles = intent.getStringArrayListExtra("titles")
+       for (title in titles!!) {
+           viewList.append(title + "")
+       }
+        for (artist in artists) {
+            viewList.append(artist + "")
         }
+        for (rating in ratings) {
+            viewList.append(rating + "")
+        }
+        for (comment in comments) {
+            viewList.append(comment + "")
+        }
+
+        Back.setOnClickListener {
+            finish()
+        }
+
+
+
+
+
+
+
 
         //CODE STARTS HERE
 

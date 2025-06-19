@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:scaleType="fitXY"
@@ -24,7 +24,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/djKhalidAnotherOne" />
+            app:srcCompat="@drawable/picture" />
 
         <TextView
             android:id="@+id/textTitle"
@@ -44,11 +44,10 @@
             android:id="@+id/btnAdd"
             android:layout_width="165dp"
             android:layout_height="53dp"
-            android:layout_marginBottom="112dp"
             android:text="Add To Playlist"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="566dp" />
 
         <EditText
             android:id="@+id/edtTitle"

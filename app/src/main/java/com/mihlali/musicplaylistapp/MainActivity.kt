@@ -37,6 +37,8 @@ class MainActivity : AppCompatActivity() {
         val ratings = arrayListOf<String>()
         val comments = arrayListOf<string>()
 
+
+
         btnExit.setOnClickListener {
             finish()
         } //terminate the app
@@ -65,6 +67,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 
 
 }

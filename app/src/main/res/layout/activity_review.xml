@@ -16,17 +16,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/djKhalidAnotherOne" />
+            app:srcCompat="@drawable/picture" />
 
         <TextView
             android:id="@+id/txtList"
@@ -74,11 +72,11 @@
 
         <Button
             android:id="@+id/btnDisplay"
-            android:layout_width="156dp"
-            android:layout_height="49dp"
-            android:layout_marginBottom="128dp"
+            android:layout_width="170dp"
+            android:layout_height="61dp"
+            android:layout_marginBottom="152dp"
             android:text="Display List"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />
@@ -87,7 +85,7 @@
             android:id="@+id/txtViewCalc"
             android:layout_width="311dp"
             android:layout_height="73dp"
-            android:layout_marginBottom="52dp"
+            android:layout_marginBottom="24dp"
             android:text="0"
             app:layout_constraintBottom_toTopOf="@+id/btnDisplay"
             app:layout_constraintEnd_toEndOf="parent"
