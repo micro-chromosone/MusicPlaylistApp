@@ -39,15 +39,16 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        btnExit.setOnClickListener {
-            finish()
-        } //terminate the app
+        //terminate the app
 
         btnReview.setOnClickListener {
             val intent = Intent(this, review::class.java)
             startActivity(intent)
 
-        } //takes you to the review page
+        }
+        btnExit.setOnClickListener {
+            finish() }
+//takes you to the review page
 
         btnAdd.setOnClickListener {
             val title = edtTitle.text.toString()
@@ -68,9 +69,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
-
 }
-
 private fun ArrayList<string>.add(string: String) {
 }
+
