@@ -37,22 +37,14 @@ class review : AppCompatActivity() {
         intent.putStringArrayListExtra("comments", comments)
 
         val titles = intent.getStringArrayListExtra("titles")
-       for (title in titles!!) {
-           viewList.append(title + "")
-       }
-        for (artist in artists) {
-            viewList.append(artist + "")
-        }
-        for (rating in ratings) {
-            viewList.append(rating + "")
-        }
-        for (comment in comments) {
-            viewList.append(comment + "")
-        }
+        val setBuilder = StringBuilder()
+         for (i in titles.indices){
+             setBuilder.append("Song Title: , $titles[i]\n" )
+             setBuilder.append("Artist: , $artists[i]\n" )
+             setBuilder.append("Rating: , $ratings[i]\n" )
+             setBuilder.append("Comments: , $comments[i]\n" )
 
-        Back.setOnClickListener {
-            finish()
-        }
+         }
 
 
 
