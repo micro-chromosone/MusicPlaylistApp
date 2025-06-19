@@ -38,11 +38,12 @@ class review : AppCompatActivity() {
 
         val titles = intent.getStringArrayListExtra("titles")
         val setBuilder = StringBuilder()
+        if (titles != null){
          for (i in titles.indices){
-             setBuilder.append("Song Title: , $titles[i]\n" )
-             setBuilder.append("Artist: , $artists[i]\n" )
-             setBuilder.append("Rating: , $ratings[i]\n" )
-             setBuilder.append("Comments: , $comments[i]\n" )
+             viewList.append(titles[i]+"\n" )
+             viewList.append(artists[i]+"\n")
+             viewList.append(ratings[i]+"\n")
+             viewList.append(ratings[i]+"\n")
 
          }
 
@@ -57,4 +58,5 @@ class review : AppCompatActivity() {
 
 
     }
+}
 }
